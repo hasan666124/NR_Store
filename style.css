@@ -1,0 +1,95 @@
+:root{
+  --indigo-900: #2D1F9E;
+  --indigo-700: #4A3AFF;
+  --indigo-100: #ECEAFF;
+  --green: #1CB854;
+  --cream: #F7F7FB;
+  --ink: #1D1B2E;
+  --ink-soft: #6B6880;
+  --line: #E6E4F2;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif;
+}
+
+/* ===== উপরের অ্যাপ বার ===== */
+.topbar{
+  background: linear-gradient(135deg, var(--indigo-700), var(--indigo-900));
+  padding: 16px 20px 24px;
+  border-radius: 0 0 20px 20px;
+}
+
+.topbar-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark{
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--indigo-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.brand-name{
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.icon-btn{
+  background: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* ===== সার্চ বক্স ===== */
+.search-wrap{
+  max-width: 1100px;
+  margin: 16px auto 0;
+}
+
+#searchInput{
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--ink);
+  outline: none;
+}
+
+#searchInput::placeholder{
+  color: var(--ink-soft);
+}
+
+main{
+  max-width: 1100px;
+  margin: 0 auto;
+}
